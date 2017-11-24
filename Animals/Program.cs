@@ -10,6 +10,8 @@ namespace Animals
     {
         static void Main(string[] args)
         {
+            // Code review: Dog should know itself what sounds it makes whitout telling it from outside
+            // for example: you cannot tell a Cat to woof, right?
             Animal dog = new Animal("Dog", "Woof-woof");
 
             Animal cat = new Animal("Cat", "Meow!");
