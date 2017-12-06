@@ -6,23 +6,27 @@ using System.Threading.Tasks;
 
 namespace Animals
 {
-    class Animal
+     abstract class Animal
     {
         // Code review: breaks encapsulation
-        public string name { get; set; }
+       
 
-        public string sound { get; set; }
-
-        public Animal(string Name, string Sound)
+        public virtual string Name()
         {
-            name = Name;
-            sound = Sound;
+           return "not defined";
         }
+
+        public virtual string Voice()
+        {
+            return "not defined";
+        }
+
+        
 
         public override string ToString()
         {
-            return name + " makes " + sound; 
+            return Name() + " makes " + Voice(); 
         }
-
+           
     }
 }

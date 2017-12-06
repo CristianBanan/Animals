@@ -12,15 +12,15 @@ namespace Animals
         {
             // Code review: Dog should know itself what sounds it makes whitout telling it from outside
             // for example: you cannot tell a Cat to woof, right?
-            Animal dog = new Animal("Dog", "Woof-woof");
+            Animal dog = new Dog();
 
-            Animal cat = new Animal("Cat", "Meow!");
+            Animal cat = new Cat();
 
-            Animal cow = new Animal("Cow", "Moo!");
+            Animal cow = new Cow();
 
-            Animal frog = new Animal("Frog", "Craok!");
+            Animal frog = new Frog();
 
-            Animal fish = new Animal("Fish", "Blub!");
+            Animal fish = new Fish();
 
             List<Animal> list = new List<Animal>();
             list.Add(dog);
