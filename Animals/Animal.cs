@@ -8,6 +8,7 @@ namespace Animals
 {
     class Animal
     {
+        // Code review: breaks encapsulation
         public string name { get; set; }
 
         public string sound { get; set; }
